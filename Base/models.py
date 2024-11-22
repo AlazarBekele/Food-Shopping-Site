@@ -27,3 +27,12 @@ class index_page_image (models.Model):
 
     def __str__(self):
         return self.Title
+    
+
+class x_icon_Dynamic (models.Model):
+
+    Title = models.CharField (max_length=30)
+    icon = models.ImageField (upload_to='X-icon/')
+
+    def __str__(self):
+        return self.Title

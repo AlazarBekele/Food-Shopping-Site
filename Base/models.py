@@ -9,7 +9,7 @@ class Category (models.Model):
     def __str__(self):
         return self.title
     
-class index (models.Model):
+class Index (models.Model):
 
     Image = models.ImageField (upload_to='Photo/')
     Title = models.CharField (max_length=30)
@@ -20,7 +20,7 @@ class index (models.Model):
     def __str__(self):
         return self.Title
 
-class index_page_image (models.Model):
+class Index_page_image (models.Model):
 
     Title = models.CharField (max_length=50)
     Picture = models.ImageField (upload_to='indexImg/')

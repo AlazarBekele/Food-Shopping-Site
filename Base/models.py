@@ -14,7 +14,7 @@ class Index (models.Model):
     Image = models.ImageField (upload_to='Photo/')
     Title = models.CharField (max_length=30)
     Price = models.IntegerField ()
-    Description = models.CharField (max_length=30)
+    Description = models.TextField ()
     Rating = models.IntegerField (validators=[MaxValueValidator(5)])
 
     def __str__(self):

@@ -19,3 +19,11 @@ class index (models.Model):
 
     def __str__(self):
         return self.Title
+
+class index_page_image (models.Model):
+
+    Title = models.CharField (max_length=50)
+    Picture = models.ImageField (upload_to='indexImg/')
+
+    def __str__(self):
+        return self.Title

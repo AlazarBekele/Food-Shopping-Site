@@ -5,7 +5,7 @@ from .models import Index
 
 def index (request):
     
-    apply = Index.objects.all()
+    apply = Index.objects.filter().order_by('-Title')[:10]
 
     context = {
         'apply' : apply

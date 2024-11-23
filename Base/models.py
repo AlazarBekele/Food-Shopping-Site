@@ -11,7 +11,7 @@ class Category (models.Model):
     
 class Index (models.Model):
 
-    Image = models.ImageField (upload_to='Photo/')
+    Image = models.ImageField (upload_to='photo/', null=True, blank=True)
     Title = models.CharField (max_length=30)
     Price = models.IntegerField ()
     Description = models.TextField ()

@@ -9,5 +9,6 @@
     width: 200px;
 }
 .MainBack {
-    
+    background: rgb(255,60,0);
+    background: linear-gradient(90deg, rgba(255,60,0,1) 0%, rgba(255,186,159,1) 48%, rgba(255,124,0,1) 100%);
 }

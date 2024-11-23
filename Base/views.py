@@ -14,3 +14,7 @@ def index (request):
     }
 
     return render (request, 'index.html', context=context)
+
+def login_page (request):
+
+    return render (request, 'Login.html')

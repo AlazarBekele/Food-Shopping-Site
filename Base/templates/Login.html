@@ -37,16 +37,12 @@
             {% csrf_token %}
             {{ form.as_p }}
   
-            <button type="submit" class=" float-end" >Login</button>
+            <button type="submit" class="log float-end rounded-pill p-3">Login</button>
   
           </form>
+
+          <a href="#" class="fontcolor d-flex justify-content-center mt-3">Dont't have an account?</a>
   
-        </div>
-
-        <div>
-
-          <img src="{% static 'Google/continue.png' %}" alt="">
-
         </div>
 
       </div>

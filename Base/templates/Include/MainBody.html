@@ -4,20 +4,35 @@
 
     {% for applys in apply %}
 
-    <div class="card" style="width: 18rem;">
+    <div class="card">
 
-      <img src="/media/{{applys.Image}}" class="card-img-top" alt="">
 
-      <div class="card-body">
+      <div class="d-flex justify-content-center align-items-center" style="width: 18rem;">
 
-        <h2>${{applys.Price}}</h2>
-        <p id="disRate"></p>
-        <h3 id="Rating_star">{{applys.Rating}}</h3>
-        <h4 class="card-title">{{applys.Title}}</h4>
-        <p class="card-text">{{applys.Description}}</p>
-        <a href="#" class="btn btn-primary">Eat</a>
+        <div>
 
-      </div>
+          <img src="/media/{{applys.Image}}" class="" alt="Img">
+
+        </div>
+
+
+        <div class="card-body fontcolor">
+
+          <h2>${{applys.Price}}</h2>
+          <h6 id="Rating_star">⭐{{applys.Rating}}</h6>
+          <h4 class="card-title">{{applys.Title}}</h4>
+          <p class="card-text">{{applys.Description}}</p>
+
+          <div class="d-flex justify-content-center">
+
+            <a href="#" class="btn btn-primary">Eat</a>
+
+          </div>
+
+        </div>
+
+    </div>
+
 
     </div>
 

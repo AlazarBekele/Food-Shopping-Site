@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,23 +6,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login Page</title>
 
+  <link rel="stylesheet" href="{% static 'CSS/Font.css' %}">
+
+  <link rel="stylesheet" href="{% static 'CSS/Login.css' %}">
+
+  <link rel="shortcut icon" type="x-icon" href="https://img.icons8.com/?size=100&id=1CE0gYy8a1e6&format=png&color=000000">
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 </head>
 <body>
 
-  <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
+  <div class="d-flex justify-content-center align-items-center gap-5" style="height: 100vh;">
 
-      <div class="card p-4">
+      <div>
 
-        <form method="post">
+        <img class="loginImg" src="https://img.freepik.com/free-vector/placeholder-concept-illustration_114360-4983.jpg?t=st=1732445808~exp=1732449408~hmac=92dbc9e0d472a4102156ce05efa1763ff753808e422e1b8f2ce8b368ab3409f2&w=740" alt="">
 
-          {% csrf_token %}
-          {{ form.as_p }}
+      </div>
 
-          <button type="submit" class="btn btn-primary float-end" >Login</button>
+      <div>
 
-        </form>
+        <div class="card p-5 shadow-lg bg-primary bg-gradient border border-white">
+
+          <h3 class="fontcolor">Login</h3>
+          <hr class="border border-white">
+  
+          <form method="post" class="mb-2 fontcolor">
+  
+            {% csrf_token %}
+            {{ form.as_p }}
+  
+            <button type="submit" class=" float-end" >Login</button>
+  
+          </form>
+  
+        </div>
+
+        <div>
+
+          <img src="{% static 'Google/continue.png' %}" alt="">
+
+        </div>
 
       </div>
 

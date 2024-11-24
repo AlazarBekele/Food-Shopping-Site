@@ -4,41 +4,42 @@
 
 </div>
 
-<div class="">
-
-  <div>
+<div class="d-flex flex-row justify-content-around align-items-center">
 
     {% for applys in apply %}
 
-    <div class="card">
+    <div class="">
 
+        <div class="card shadow p-3 mb-5" style="width: 18rem;">
 
-    <div class="d-flex justify-content-center align-items-center" style="width: 18rem;">
+          <div>
 
-        <div>
-
-          <img src="{{applys.Image.url}}" class="" alt="Img">
-
-        </div>
-
-
-        <div class="card-body fontcolor">
-
-          <h2>${{applys.Price}}</h2>
-          <h6 id="Rating_star">⭐{{applys.Rating}}</h6>
-          <h4 class="card-title">{{applys.Title}}</h4>
-          <p class="card-text">{{applys.Description}}</p>
-
-          <div class="d-flex justify-content-center">
-
-            <a href="#" class="btn btn-primary">Eat</a>
+            <img style="width: 200px" class="p-3" src="{{applys.Image.url}}" alt="Img">
 
           </div>
 
-        </div>
 
-    </div>
+          <div class="card-body fontcolor">            
 
+            <div class="d-flex justify-content-between align-items-center">
+
+              <h3 class="card-title">{{applys.Title}}</h3>
+              <h3 class="border rounded bg-primary ps-3 pe-3 pt-1 pb-1 text whiteColor shadow-sm">${{applys.Price}}</h3>
+
+            </div>
+            
+            <h6 id="Rating_star">⭐{{applys.Rating}}</h6>
+            <p class="card-text">{{applys.Description}}</p>
+
+            <div class="d-flex justify-content-center">
+
+              <a href="#" class="btn btn-primary">Eat</a>
+
+            </div>
+
+          </div>
+
+      </div>
 
     </div>
 

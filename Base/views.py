@@ -46,4 +46,4 @@ def login_check (request):
         'form' : form
     }
 
-    return render (request, 'Login.html', context)
+    return render (request, 'Login.html', context=context)
